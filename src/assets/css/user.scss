@@ -1,0 +1,172 @@
+.user-common{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+    z-index: -1;
+    .user-common-head{
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        box-shadow: 0 0 10px #888;
+    }
+    .user-common-flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .font-cursive{
+        font-family: cursive;
+    }
+    .user-common-prompt{
+        padding: 20px 0;
+        border: 1px dashed #999;
+        text-indent: 20px;
+        margin: 30px 0;
+        color: rgb(16, 97, 163);
+        border-radius: 15px;
+        p{
+          height: 20px;
+          line-height: 20px;
+          margin-top: 20px;
+          font-size: 15px;
+        }
+    }
+    .user-common-container{
+        width: 100%;
+        margin-top: 70px;
+        box-sizing: border-box;
+        border-left: 110px solid #fff;
+        border-right: 20px solid #fff;
+        .user-common-ul{
+            cursor: pointer;
+            border-bottom: 1px solid rgb(248, 222, 222);
+            background-color: #fcf6f6;
+            li{
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                flex-basis: 100px;
+                text-align: center;
+            }
+        }
+        .user-common-ul-next{
+            box-shadow: 0 0 20px 0 rgb(247, 185, 185);
+            border-radius: 15px;
+            margin-top: 10px;
+            overflow: hidden;
+            border-left: 1px solid rgb(248, 222, 222);
+            ul:hover{
+                background-color: rgb(245, 190, 190);
+            }
+            ul:first-of-type{
+                font-size: 14px;
+                color: #fff;
+                background-color: #ff8932;
+            }
+            ul:first-of-type:hover{
+                background-color: #ff8932;
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px){
+    .user-common{
+        top: 60px;
+        .user-common-head{
+            display: none;
+        }
+        .user-common-flex{
+            display: block;
+        }
+        .user-common-container{
+            border-width: 5px;
+            margin-top: 10px;
+            margin-left: 0;
+            .user-common-ul{
+                li{
+                    display: block;
+                    height: 30px;
+                    line-height: 30px;
+                }
+            }
+            .user-common-ul-next{
+                display: flex;
+                justify-content:flex-start;
+                margin-right: 10px;
+                align-items:center;
+                ul{
+                  flex-grow: 1;
+                  border-right: 1px solid rgb(248, 222, 222);
+                  border-top: 1px solid rgb(248, 222, 222);
+                  li{
+                    text-align: left;
+                  }
+                }
+            }
+        }
+    }
+}
+
+//交易页面通用样式
+.withdraw-head{
+    height: 80px;
+    margin-bottom: 20px;
+    span:first-of-type{
+      font-size: 22px;
+      color: rgb(22, 112, 230);
+      font-weight: bold;
+    }
+    span:last-of-type{
+      font-size: 16px;
+      cursor: pointer;
+    }
+    span:last-of-type:hover{
+      text-decoration: underline;
+      color: blue;
+    }
+  }
+  .withdraw-body{
+      li{
+      margin-bottom: 20px;
+      }
+      .withdraw-left,.withdraw-rigit,.withdraw-point{
+        display: inline-block;
+        
+      }
+      .withdraw-point{
+        color: red;
+        font-weight: bold;
+      }
+      .withdraw-left{
+        width: 120px;
+      }
+      .withdraw-rigit{
+        width: 200px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        text-indent: 10px;
+        height: 30px;
+      }
+      .withdraw-button{
+        color: #fff;
+        background-color: #ff8932;
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
+      .withdraw-button:hover{
+        background-color: #c74219;
+      }
+  }
+  @media screen and ( max-width: 650px ) {
+    .withdraw-head{
+      margin-top: 50px;
+      span:last-of-type{
+        margin-left: 30px;
+      }
+    }
+  } 

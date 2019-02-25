@@ -1,0 +1,1 @@
+export const RECEVER_MOCK_DATA = 'recever_mock_data'
